@@ -1,0 +1,41 @@
+{
+  "title": "platform",
+  "type": "object",
+  "x-examples": {
+    "lamp post example ": {
+      "@id": "lamp-post-west-street-no-4",
+      "@type": "Platform",
+      "label": "Lamp post no. 4 (West Street)",
+      "description": "On the eastbound side of the carriageway, 1 metre from the road.",
+      "inDeployment": "local-authority-sensors"
+    }
+  },
+  "description": "A Platform is an entity that hosts other entities, particularly Sensors and other Platforms.",
+  "properties": {
+    "@id": {
+      "type": "string"
+    },
+    "@type": {
+      "type": "string",
+      "enum": [
+        "Platform"
+      ]
+    },
+    "label": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "inDeployment": {
+      "type": "string"
+    },
+    "location": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "@id",
+    "@type"
+  ]
+}
