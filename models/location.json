@@ -1,0 +1,44 @@
+{
+  "title": "observation",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Feature"
+      ]
+    },
+    "geometry": {
+      "type": "object",
+      "required": [
+        "type",
+        "coordinates"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Point",
+            "LineString",
+            "Polygon"
+          ]
+        },
+        "coordinates": {
+          "type": "array",
+          "items": {}
+        }
+      }
+    },
+    "properties": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "type",
+    "geometry",
+    "properties"
+  ]
+}
