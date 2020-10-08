@@ -4,7 +4,8 @@ This namespace defines the common ontology and vocabulary used across all of the
 
 # Classes
 
-[Platform](../models/platform.json)
+- [Observation](../models/observation.json)
+- [Platform](../models/platform.json)
 
 
 # Further points
