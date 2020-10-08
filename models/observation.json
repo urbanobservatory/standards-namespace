@@ -1,6 +1,7 @@
 {
   "title": "observation",
   "type": "object",
+  "description": "",
   "properties": {
     "@id": {
       "type": "string"
@@ -20,8 +21,7 @@
             "array",
             "string",
             "number"
-          ],
-          "items": {}
+          ]
         },
         "flags": {
           "type": "array",
@@ -63,5 +63,10 @@
       "$ref": "./location.json"
     }
   },
-  "description": ""
+  "required": [
+    "@id",
+    "@type",
+    "hasResult",
+    "resultTime"
+  ]
 }
