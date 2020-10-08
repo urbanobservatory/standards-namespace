@@ -1,0 +1,67 @@
+{
+  "title": "observation",
+  "type": "object",
+  "properties": {
+    "@id": {
+      "type": "string"
+    },
+    "@type": {
+      "type": "string",
+      "enum": [
+        "Observation"
+      ]
+    },
+    "hasResult": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": [
+            "object",
+            "array",
+            "string",
+            "number"
+          ],
+          "items": {}
+        },
+        "flags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "unit": {
+          "type": "string"
+        }
+      }
+    },
+    "resultTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "aggregation": {
+      "type": "string"
+    },
+    "observedProperty": {
+      "type": "string"
+    },
+    "disciplines": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "usedProcedures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "madeBySensor": {
+      "type": "string"
+    },
+    "location": {
+      "$ref": "./location.json"
+    }
+  },
+  "description": ""
+}

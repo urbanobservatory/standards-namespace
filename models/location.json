@@ -40,5 +40,6 @@
     "type",
     "geometry",
     "properties"
-  ]
+  ],
+  "description": "GeoJSON compliant location. Uses WGS84."
 }

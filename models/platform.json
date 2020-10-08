@@ -31,7 +31,7 @@
       "type": "string"
     },
     "location": {
-      "type": "object"
+      "$ref": "./location.json"
     }
   },
   "required": [
